@@ -7,14 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Git Song',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Git Song are cool',
   url: 'http://docs.gitsong.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon: 'img/knowledge-map.svg',
+  organizationName: 'Git Song', // Usually your GitHub org/user name.
 
   presets: [
     [
@@ -46,7 +45,7 @@ const config = {
         title: 'Git Song',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/knowledge-map.svg',
         },
         items: [
           {
@@ -55,7 +54,13 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   type: 'doc',
+          //   docId: 'csharp/intro33',
+          //   position: 'left',
+          //   label: 'CSharp',
+          // },
+          {to: '/blog', label: 'Blog', position: 'left', blogSidebarCount: '10'},
           {
             href: 'https://github.com/gitsong99/docs.gitsong.com',
             label: 'GitHub',
@@ -66,47 +71,39 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Docs',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     }
+          //   ],
+          // },
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/gitsong99/docs.gitsong.com',
-              },
-            ],
+            // title: 'More',
+            // items: [
+            //   // {
+            //   //   label: 'Blog',
+            //   //   to: '/blog',
+            //   // },
+            //   // {
+            //   //   label: 'GitHub',
+            //   //   href: 'https://github.com/gitsong99/docs.gitsong.com',
+            //   // },
+            // ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} GitSong, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
